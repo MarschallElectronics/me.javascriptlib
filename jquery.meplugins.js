@@ -5,12 +5,68 @@
  *	Marschall Electronics GmbH & Co KG
  *	Garmisch-Partenkirchen
  */
-(function($) {
-	
-	 
+(function($)
+{
+	/**
+	 * Check all of a Checkboxlist
+	 * @param check Object($(this))
+	 *
+	 * @summary
+	 * id="selectall" feuert den Funktionsaufruf
+	 * data-ident="clientselect" = Identifier (class der anderen checkboxen)
+	 *
+	 * @example
+	 * <input type="checkbox" id="selectall" data-ident="clientselect" name="selall" title="Check ALL">
+	 * loop
+	 * <input type="checkbox" class="clientselect" name="toToggle" value="">
+	 * /loop
+	 *
+	  // Toggle ALL Checkboxes
+	  $("input#selectall").change(function () {
+			$(this).selectAllToggle();
+		});
+	 *
+	 */
+	$.fn.me_selectAllToggle = function()
+	{
+		var check = $(this);
+		var ident = check.data('ident');
+		var state = check.prop('checked');
+
+		$("input." + ident).each(function () {
+			$(this).prop('checked', state);
+		});
+	}
+
 	/**
 	 *
 	 * Zwei Selects: Einträge können von einem ins andere geklickt werden
+	 * @example
+	 * $('[id^=twoselect]').me_twoselect();
+
+	 <table class="maintbl fixlayout" cellpadding="0" cellspacing="0" id="twoselect1">
+	 <tr>
+	 <td width="50%" style="padding:10px;">
+	 <span style="font-size:10px;">Verfügbare Produkte: </span><br />
+	 <select class="leftselect selectbox1" name="leftuserselect[]" size="5" multiple="multiple">
+	 <mecms module="mod_selectfield" type="create_options" query="SELECT p.id as idfield, p.bezeichnung as displayfield FROM mod_shop_produkte as p">
+	 <option value="<mecms module="mod_selectfield" type="getoptionvalue" />"><mecms module="mod_selectfield" type="getoptiondisplay" /></option>
+	 </mecms>
+	 </select>
+	 </td>
+	 <td style="padding:10px;" width="45" align="center">
+	 <input class="leftbtn" type="button" name="leftbut_clid" value="&lt;" />
+	 <input class="rightbtn" type="button" name="rightbut_clid" value="&gt;" />
+	 </td>
+	 <td width="50%" style="padding:10px;">
+	 <span style="font-size:10px;">Produkt zugeteilt:</span><br />
+	 <select class="rightselect selectbox1" name="rightproduktselect[]" size="5" multiple="multiple">
+	 </select>
+	 </td>
+	 </tr>
+	 </table>
+
+	 *
 	 */
 	$.fn.me_twoselect = function(options)
 	{
@@ -235,6 +291,52 @@
 	/**
 	 *
 	 * Image Rotate
+	 *
+	 * @example:
+
+	 	// Imagerotate
+	 	$('div.slider > div.slideitems').me_image_rotate({
+			autoslide: true
+		});
+
+	 <div class="slideshow1">
+	 <div class="slider_maske">
+	 </div>
+	 <div id="slidebuttons" class="sliderbuttons">
+	 <button class="prev" id="slideprevbtn"></button>
+	 <button class="next" id="slidenextbtn"></button>
+	 </div>
+	 <div class="slidetextboxes">
+	 <div class="slidetextbox" style="display:none;">
+	 <h1>Slide 1</h1>
+	 </div>
+	 <div class="slidetextbox" style="display:none;">
+	 <h1>Slide 2</h1>
+	 </div>
+	 <div class="slidetextbox" style="display:none;">
+	 <h1>Slide 3</h1>
+	 </div>
+	 </div>
+	 <div id="slidedots" class="slidedots">
+	 <button>&#0149;</button>
+	 <button>&#0149;</button>
+	 <button>&#0149;</button>
+	 </div>
+	 <div class="slider">
+	 <div class="slideitems">
+	 <div class="img" style="background-image:none;">
+	 <img alt="Slideshow-Image" src="http://www.gemeinde-saulgrub.de/mediacenter/1239/980/257/1/0/0/0/Hintere+Feld_0026.JPG" />
+	 </div>
+	 <div class="img" style="background-image:none;">
+	 <img alt="Slideshow-Image" src="http://www.gemeinde-saulgrub.de/mediacenter/1246/980/257/1/0/0/0/Ansicht+Kirche+Saulgrub+2014+Bild+1_bea.jpg" />
+	 </div>
+	 <div class="img" style="background-image:none;">
+	 <img alt="Slideshow-Image" src="http://www.gemeinde-saulgrub.de/mediacenter/339/980/257/1/0/0/0/DSC03382+Tiefsee.JPG" />
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 *
 	 */
 	$.fn.me_image_rotate = function(options)
 	{
