@@ -1,0 +1,15 @@
+{
+  "name": "me/me.javascriptlib",
+  "type": "library",
+  "description": "Javascript Bibliothek",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Bene Reuthlinger",
+      "email": "br@garmisch.net"
+    }
+  ],
+  "config": {
+    "secure-http": false
+  }
+}
