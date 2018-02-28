@@ -1,5 +1,5 @@
 {
-  "name": "me/me.javascriptlib",
+  "name": "me/javascriptlib",
   "type": "library",
   "description": "Javascript Bibliothek",
   "minimum-stability": "dev",
@@ -8,8 +8,5 @@
       "name": "Bene Reuthlinger",
       "email": "br@garmisch.net"
     }
-  ],
-  "config": {
-    "secure-http": false
-  }
+  ]
 }
