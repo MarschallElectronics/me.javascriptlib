@@ -8,5 +8,8 @@
       "name": "Bene Reuthlinger",
       "email": "br@garmisch.net"
     }
-  ]
+  ],
+  "config": {
+    "secure-http": false
+  }
 }
