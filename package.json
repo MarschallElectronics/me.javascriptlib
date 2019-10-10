@@ -1,0 +1,11 @@
+{
+  "name": "me.javascriptlib",
+  "version": "1.0.0",
+  "description": "ME Javascript-Bibliothek",
+  "repository": {
+    "url": "https://github.com/MarschallElectronics/me.javascriptlib.git",
+    "type": "git"
+  },
+  "author": "Bene Reuthlinger <br@garmisch.net>",
+  "license": "MIT"
+}
