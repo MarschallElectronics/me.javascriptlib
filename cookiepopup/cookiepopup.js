@@ -12,10 +12,8 @@
  *
  * Der gesetzte Cookie heißt cookieconsent_dismissed. Ist dessen Wert "yes" hat der User allen Cookies zugestimmt, bei "no" wurden nur essenziellen Cookies zugestimmt.
  */
-function cookiePopup(options)
+!function ()
 {
-	window.cookieconsent_options = options;
-
 	if (!window.hasCookieConsent)
 	{
 		window.hasCookieConsent = !0;
@@ -216,19 +214,16 @@ function cookiePopup(options)
 
 						if (-1 === t.indexOf(".css"))
 						{
-							if (!t.search(/^https?\:\/\//i))
-							{
-								t = i + t + ".css";
-							}
-
-							var n = document.createElement("link");
-							n.rel = "stylesheet", n.type = "text/css", n.href = t;
-							var o = !1;
-							n.onload = s.bind(function ()
-							{
-								!o && e && (e.call(this), o = !0)
-							}, this), document.getElementsByTagName("head")[0].appendChild(n)
+							t = i + t + ".css";
 						}
+
+						var n = document.createElement("link");
+						n.rel = "stylesheet", n.type = "text/css", n.href = t;
+						var o = !1;
+						n.onload = s.bind(function ()
+						{
+							!o && e && (e.call(this), o = !0)
+						}, this), document.getElementsByTagName("head")[0].appendChild(n)
 					},
 					render: function ()
 					{
@@ -260,4 +255,4 @@ function cookiePopup(options)
 			})(), s.addEventListener(document, "readystatechange", o)
 		}
 	}
-}
+}();
