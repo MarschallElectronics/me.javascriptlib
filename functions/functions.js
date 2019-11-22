@@ -14,8 +14,6 @@ function isset(variable)
 /**
  * erstellt ein Cookie Popup, das dem User ermöglicht entweder alle oder nur essenzielle Cookies zu aktivieren
  *
- * Options können mit window.cookieconsent_options als JSON überschrieben werden
- *
  * @param options / verfügbare Options:
  * 	message: kurzer Infotext zu Cookies
  * 	dismiss: Text im "alle Cookies akzeptieren Button
