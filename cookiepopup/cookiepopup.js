@@ -14,7 +14,7 @@
  */
 function cookiePopup(options)
 {
-	window.cookieconsent_options(options);
+	window.cookieconsent_options = options;
 
 	if (!window.hasCookieConsent)
 	{
