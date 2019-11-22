@@ -12,8 +12,10 @@
  *
  * Der gesetzte Cookie heißt cookieconsent_dismissed. Ist dessen Wert "yes" hat der User allen Cookies zugestimmt, bei "no" wurden nur essenziellen Cookies zugestimmt.
  */
-!function ()
+function cookiepopup(options)
 {
+	window.cookieconsent_options = options;
+
 	if (!window.hasCookieConsent)
 	{
 		window.hasCookieConsent = !0;
@@ -255,4 +257,4 @@
 			})(), s.addEventListener(document, "readystatechange", o)
 		}
 	}
-}();
+}
