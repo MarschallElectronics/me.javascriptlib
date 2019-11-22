@@ -4,10 +4,14 @@
     Bibliothek für Javascript-Funktionen und -Klassen 
 </p>
 <h3>Yarn</h3>
-<p>
-    Yarn Publish: https://yarnpkg.com/en/docs/publishing-a-package<br />
-    Dieses Paket mit Yarn benutzen: https://yarnpkg.com/en/package/me.javascriptlib    
-</p>
+<p>Yarn Publish: https://yarnpkg.com/en/docs/publishing-a-package</p>
+<ul>
+    <li>yarn login</li>
+    <li>yarn publish</li>
+    <li>Versionsnummer erhöhen</li>
+    <li>Passwort des NPMJS-User (www.npmjs.com) eingeben</li>
+</ul>
+<p>Dieses Paket mit Yarn benutzen: https://yarnpkg.com/en/package/me.javascriptlib</p>
 <h3>Git-Repo</h3>
 <p>
 	Clone, Push: ssh://git.garmisch.net/srv/git/me.office.web.git<br />
