@@ -11,6 +11,12 @@
     <li>Versionsnummer erhöhen</li>
     <li>Passwort des NPMJS-User (www.npmjs.com) eingeben</li>
 </ul>
+<h3>Server</h3>
+<p>
+    webservices.garmisch.net (Styx) <br />
+    Dir: /public/www/me.javascriptlib<br />
+    (Die aktuellste Version sollte bei jedem Yarn-Publish aktualisiert werden, weil CSS dort eingebunden wird.)
+</p>
 <p>Dieses Paket mit Yarn benutzen: https://yarnpkg.com/en/package/me.javascriptlib</p>
 <h3>Git-Repo</h3>
 <p>

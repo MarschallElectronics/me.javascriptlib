@@ -4,7 +4,7 @@
  *
  * @param options / verfügbare Options:
  * 	message: kurzer Infotext zu Cookies
- * 	dismiss: Text im "alle Cookies akzeptieren Button
+ * 	dismiss: Text im "alle Cookies akzeptieren" Button
  * 	essential: Text im "Nur essenzielle Cookies akzeptieren" Button
  * 	learnMore: Text für Link zu den Datenschutz Infos
  * 	link: Link zu den Datenschutz Infos
