@@ -22,7 +22,7 @@ function cookiePopup(options)
 		var e = "cookieconsent_options",
 			t = "update_cookieconsent_options",
 			n = "cookieconsent_dismissed",
-			i = "https://webservices.garmisch.net/zentral/scripts/js/cookie-hinweis/";
+			i = "https://webservices.garmisch.net/me.javascriptlib/cookiepopup/";
 		if (!(document.cookie.indexOf(n) > -1))
 		{
 			"function" != typeof String.prototype.trim && (String.prototype.trim = function ()
@@ -213,14 +213,22 @@ function cookiePopup(options)
 					loadTheme: function (e)
 					{
 						var t = this.options.theme;
-						-1 === t.indexOf(".css") && (t = i + t + ".css");
-						var n = document.createElement("link");
-						n.rel = "stylesheet", n.type = "text/css", n.href = t;
-						var o = !1;
-						n.onload = s.bind(function ()
+
+						if (-1 === t.indexOf(".css"))
 						{
-							!o && e && (e.call(this), o = !0)
-						}, this), document.getElementsByTagName("head")[0].appendChild(n)
+							if (!t.search(/^https?\:\/\//i))
+							{
+								t = i + t + ".css";
+							}
+
+							var n = document.createElement("link");
+							n.rel = "stylesheet", n.type = "text/css", n.href = t;
+							var o = !1;
+							n.onload = s.bind(function ()
+							{
+								!o && e && (e.call(this), o = !0)
+							}, this), document.getElementsByTagName("head")[0].appendChild(n)
+						}
 					},
 					render: function ()
 					{
