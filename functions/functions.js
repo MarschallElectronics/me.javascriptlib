@@ -2,8 +2,6 @@
  *
  * @param variable
  * @returns {boolean}
- *
- * @todo ist noch ungetestet
  */
 function isset(variable)
 {
@@ -18,7 +16,7 @@ function isset(variable)
  *
  * Options können mit window.cookieconsent_options als JSON überschrieben werden
  *
- * verfügbare Options:
+ * @param options / verfügbare Options:
  * 	message: kurzer Infotext zu Cookies
  * 	dismiss: Text im "alle Cookies akzeptieren Button
  * 	essential: Text im "Nur essenzielle Cookies akzeptieren" Button
@@ -41,7 +39,6 @@ function cookiePopup(options)
 			i = "https://webservices.garmisch.net/zentral/scripts/js/cookie-hinweis/";
 		if (!(document.cookie.indexOf(n) > -1))
 		{
-
 			"function" != typeof String.prototype.trim && (String.prototype.trim = function ()
 			{
 				return this.replace(/^\s+|\s+$/g, "")
