@@ -22,7 +22,7 @@ function cookiepopup(options)
 		var e = "cookieconsent_options",
 			t = "update_cookieconsent_options",
 			n = "cookieconsent_dismissed",
-			i = "https://webservices.garmisch.net/me.javascriptlib/cookiepopup/";
+			i = "https://webservices.garmisch.net/me.javascriptlib/latest/cookiepopup/";
 		if (!(document.cookie.indexOf(n) > -1))
 		{
 			"function" != typeof String.prototype.trim && (String.prototype.trim = function ()
