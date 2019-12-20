@@ -154,43 +154,31 @@ function cookiepopup(options)
 						markup: [
 							'<div class="cc_banner-wrapper {{containerClasses}}">',
 							'<div class="cc_banner cc_container cc_container--open">',
-							'<div class="cc_text cc_message">',
+							'<div class="cc_message">',
 							'{{options.message}} ' +
 							'<a rel="nofollow" data-cc-if="options.link" class="cc_more_info" href="{{options.link || "#null"}}">' +
 							'{{options.learnMore}}' +
 							'</a>' +
 							'</div>',
 							'<div class="cc_list">',
-							'<ul>',
-							'<table>',
-							'<tr>',
-							'<td>',
-							'<li class="cc_left">Essenziell</li>',
-							'</td>',
-							'<td>',
-							'<li>Statistiken</li>',
-							'</td>',
-							'</tr>',
-							'<tr>',
-							'<td>',
-							'<li class="cc_left">Marketing</li>',
-							'</td>',
-							'<td>',
-							'<li>Externe Medien</li>',
-							'</td>',
-							'</tr>',
-							'</table>',
-							'</ul>',
+							'<div class="cc_row">',
+							'<div class="cc_cell">&bull; Essenziell</div>',
+							'<div class="cc_cell">&bull; Marketing</div>',
+							'</div>',
+							'<div class="cc_row">',
+							'<div class="cc_cell">&bull; Statistiken</div>',
+							'<div class="cc_cell">&bull; Externe Medien</div>',
+							'</div>',
 							'</div>',
 							'<div class="cc_btn_grp">',
-							'<a href="#null" data-cc-event="click:dismiss" class="cc_btn cc_btn_accept_all">' +
+							'<button href="#null" data-cc-event="click:dismiss" class="cc_btn cc_btn_accept_all">' +
 							'{{options.dismiss}}' +
-							'</a>',
-							'<a href="#null" data-cc-event="click:essential" class="cc_btn cc_btn_only_essential">' +
+							'</button>',
+							'<button href="#null" data-cc-event="click:essential" class="cc_btn cc_btn_only_essential">' +
 							'{{options.essential}}' +
-							'</a>',
+							'</button>',
 							'</div>',
-							"</div>"
+							'</div>'
 						]
 					},
 					init: function ()
