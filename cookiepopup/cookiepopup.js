@@ -1,4 +1,3 @@
-
 /**
  * erstellt ein Cookie Popup, das dem User ermöglicht entweder alle oder nur essenzielle Cookies zu aktivieren
  *

@@ -1,263 +1,264 @@
 
 .cc_container, .cc_container *, .cc_container div, .cc_container button, .cc_container a
 {
-	all         :initial;
+	all         : initial;
 	color       : #FFFFFF;
 	font-family : "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, serif;
 }
 
 #webhint
 {
-	display: none
+	display : none
 }
 
 .cc_container
 {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	overflow: hidden;
-	padding: 10px !important;
-	text-align: center;
-	line-height: 1.5;
-	background: #222;
-	color: #fff;
-	font-size: 14px;
-	box-sizing: border-box;
+	position    : fixed;
+	left        : 0;
+	right       : 0;
+	bottom      : 0;
+	overflow    : hidden;
+	padding     : 10px !important;
+	text-align  : center;
+	line-height : 1.5;
+	background  : #222;
+	color       : #fff;
+	font-size   : 14px;
+	box-sizing  : border-box;
 }
 
 .cc_container .cc_btn
 {
-	padding: 8px 10px !important;
-	cursor: pointer;
-	transition: font-size 200ms;
-	text-align: center;
-	font-size: 1.5em;
-	display: inline-block;
-	margin-left: 10px !important;
-	line-height: 1em;
-	float: right;
+	padding     : 8px 10px !important;
+	cursor      : pointer;
+	transition  : font-size 200ms;
+	text-align  : center;
+	font-size   : 1.5em;
+	display     : inline-block;
+	margin-left : 10px !important;
+	line-height : 1em;
+	float       : right;
 }
 
 .cc_container .cc_btn
 {
-	width: 100%;
+	width : 100%;
 }
 
 .cc_container .cc_message
 {
-	display: inline-block;
-	float: left;
-	line-height: 1.5em;
-	text-align: left;
-	width: 40%;
+	display     : inline-block;
+	float       : left;
+	line-height : 1.5em;
+	text-align  : left;
+	width       : 40%;
 }
 
 .cc_container .cc_list
 {
-	text-align: center;
-	display: inline-block;
-	margin-left: 30px;
-	margin-top: 20px;
-	font-size: 10px;
-	width: 30%;
+	text-align  : center;
+	display     : inline-block;
+	margin-left : 30px;
+	margin-top  : 20px;
+	font-size   : 10px;
+	width       : 30%;
 }
 
 .cc_banner-wrapper
 {
-	z-index: 9001;
-	position: relative
+	z-index  : 9001;
+	position : relative
 }
 
 .cc_container .cc_btn_grp
 {
-	width: 20%;
-	display: inline-block;
-	float: right;
-	margin: 10px 0;
+	width   : 20%;
+	display : inline-block;
+	float   : right;
+	margin  : 10px 0;
 }
 
 .cc_container .cc_list
 {
-	display: table;
-	padding: 0;
-	margin: 0;
+	display : table;
+	padding : 0;
+	margin  : 0;
 }
 
 .cc_container .cc_list .cc_cell
 {
-	display: table-row;
-	vertical-align: inherit;
+	display        : table-row;
+	vertical-align : inherit;
 }
 
 .cc_container .cc_list .cc_row
 {
-	display: table-row;
-	vertical-align: inherit;
+	display        : table-row;
+	vertical-align : inherit;
 }
 
-.cc_container .cc_logo:hover,.cc_container .cc_logo:active
+.cc_container .cc_logo:hover, .cc_container .cc_logo:active
 {
 	opacity : 1
 }
 
-@media screen and (min-width: 500px)
+@media screen and (min-width : 500px)
 {
 
 	.cc_container .cc_list
 	{
-		display: inline-block;
-		margin: 0;
-		padding-right: 30%;
-		position: absolute;
-		top: 50%;
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
-		font-size: 8px;
+		display       : inline-block;
+		margin        : 0;
+		padding-right : 30%;
+		position      : absolute;
+		top           : 50%;
+		-ms-transform : translateY(-50%);
+		transform     : translateY(-50%);
+		font-size     : 8px;
 	}
 
 	.cc_container .cc_btn
 	{
-		font-size:1.2em
+		font-size : 1.2em
 	}
 
 	.cc_container .cc_message
 	{
-		padding: 3px;
-		font-size : 12px;
-		margin    : auto;
-		line-height:1.2;
-		position  : absolute;
-		top: 50%;
-		-ms-transform: translateY(-50%) translateX(-120%);
-		transform: translateY(-50%) translateX(-120%);
+		padding       : 3px;
+		font-size     : 12px;
+		margin        : auto;
+		line-height   : 1.2;
+		position      : absolute;
+		top           : 50%;
+		-ms-transform : translateY(-50%) translateX(-120%);
+		transform     : translateY(-50%) translateX(-120%);
 	}
 
 	.cc_container .cc_more_info
 	{
-		font-size: 12px;
+		font-size : 12px;
 	}
 
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width : 768px)
 {
 	#webhint
 	{
-		display:block
+		display : block
 	}
 
 	.cc_container .cc_list .cc_cell
 	{
-		display: table-cell;
-		padding-left: 5px;
+		display      : table-cell;
+		padding-left : 5px;
 	}
 
 	.cc_container .cc_btn
 	{
-		font-size: 1em;
-		padding: 8px 10px;
+		font-size : 1em;
+		padding   : 8px 10px;
 	}
 
 	.cc_container .cc_message
 	{
-		font-size: 13px;
-		line-height: 1
+		font-size   : 13px;
+		line-height : 1
 	}
 
 	.cc_container .cc_more_info
 	{
-		font-size: 13px;
+		font-size : 13px;
 	}
 }
 
-@media screen and (min-width: 992px)
+@media screen and (min-width : 992px)
 {
 
 	.cc_container .cc_message
 	{
-		font-size:14px;
+		font-size : 14px;
 	}
 
 	.cc_container .cc_more_info
 	{
-		font-size:14px;
+		font-size : 14px;
 	}
 
 }
 
 @media print
 {
-	.cc_banner-wrapper,.cc_container {
-		display: none
+	.cc_banner-wrapper, .cc_container
+	{
+		display : none
 	}
 }
 
 .cc_container ::-moz-selection
 {
-	background: #ff5e99;
-	color: #fff;
-	text-shadow: none
+	background  : #ff5e99;
+	color       : #fff;
+	text-shadow : none
 }
 
-.cc_container .cc_btn_accept_all,.cc_container .cc_btn_accept_all:visited
+.cc_container .cc_btn_accept_all, .cc_container .cc_btn_accept_all:visited
 {
-	color: #000;
-	background-color: #f1d600;
-	transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
-	-webkit-transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
-	border-radius: 5px;
-	-webkit-border-radius: 5px
+	color                 : #000;
+	background-color      : #f1d600;
+	transition            : background 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+	-webkit-transition    : background 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+	border-radius         : 5px;
+	-webkit-border-radius : 5px
 }
 
-.cc_container .cc_btn_accept_all:hover,.cc_container .cc_btn_accept_all:active
+.cc_container .cc_btn_accept_all:hover, .cc_container .cc_btn_accept_all:active
 {
-	background-color: #fff;
-	color: #000
+	background-color : #fff;
+	color            : #000
 }
 
-.cc_container .cc_btn_only_essential,.cc_container .cc_btn_only_essential:visited
+.cc_container .cc_btn_only_essential, .cc_container .cc_btn_only_essential:visited
 {
-	color: #000;
-	background-color: lightgrey;
-	transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
-	-webkit-transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	margin-top: 10px;
+	color                 : #000;
+	background-color      : lightgrey;
+	transition            : background 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+	-webkit-transition    : background 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+	border-radius         : 5px;
+	-webkit-border-radius : 5px;
+	margin-top            : 10px;
 }
 
-.cc_container .cc_btn_only_essential:hover,.cc_container .cc_btn_only_essential:active
+.cc_container .cc_btn_only_essential:hover, .cc_container .cc_btn_only_essential:active
 {
-	background-color: #fff;
-	color: #000
+	background-color : #fff;
+	color            : #000
 }
 
-.cc_container a,.cc_container a:visited
+.cc_container a, .cc_container a:visited
 {
-	text-decoration: none;
-	color: #31a8f0;
-	transition: 200ms color
+	text-decoration : none;
+	color           : #31a8f0;
+	transition      : 200ms color
 }
 
-.cc_container a:hover,.cc_container a:active
+.cc_container a:hover, .cc_container a:active
 {
-	color: #b2f7ff
+	color : #b2f7ff
 }
 
 @-webkit-keyframes slideUp
 {
 	0%
 	{
-		-webkit-transform: translateY(66px);
-		transform: translateY(66px)
+		-webkit-transform : translateY(66px);
+		transform         : translateY(66px)
 	}
 
 	100%
 	{
-		-webkit-transform: translateY(0);
-		transform: translateY(0)
+		-webkit-transform : translateY(0);
+		transform         : translateY(0)
 	}
 }
 
@@ -265,25 +266,25 @@
 {
 	0%
 	{
-		-webkit-transform: translateY(66px);
-		-ms-transform: translateY(66px);
-		transform: translateY(66px)
+		-webkit-transform : translateY(66px);
+		-ms-transform     : translateY(66px);
+		transform         : translateY(66px)
 	}
 
 	100%
 	{
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0)
+		-webkit-transform : translateY(0);
+		-ms-transform     : translateY(0);
+		transform         : translateY(0)
 	}
 }
 
-.cc_container,.cc_message,.cc_btn
+.cc_container, .cc_message, .cc_btn
 {
-	animation-duration: 0.8s;
-	-webkit-animation-duration: 0.8s;
-	-moz-animation-duration: 0.8s;
-	-o-animation-duration: 0.8s;
-	-webkit-animation-name: slideUp;
-	animation-name: slideUp
+	animation-duration         : 0.8s;
+	-webkit-animation-duration : 0.8s;
+	-moz-animation-duration    : 0.8s;
+	-o-animation-duration      : 0.8s;
+	-webkit-animation-name     : slideUp;
+	animation-name             : slideUp
 }
