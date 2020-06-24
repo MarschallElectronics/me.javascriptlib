@@ -13,8 +13,8 @@
 </ul>
 <h3>Server</h3>
 <p>
-    webservices.garmisch.net (Styx) <br />
-    Dir: /public/www/me.javascriptlib<br />
+    Änderungen auch auf webservices.garmisch.net (Styx) laden <br />
+    Dir: /public/www/me.javascriptlib/latest/<br />
     (Die aktuellste Version sollte bei jedem Yarn-Publish aktualisiert werden, weil CSS dort eingebunden wird.)
 </p>
 <p>Dieses Paket mit Yarn benutzen: https://yarnpkg.com/en/package/me.javascriptlib</p>
