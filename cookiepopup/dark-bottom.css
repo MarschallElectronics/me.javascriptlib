@@ -102,6 +102,41 @@
 	opacity : 1
 }
 
+@media screen and (min-width : 320px)
+{
+	.cc_container a
+	{
+		font-size: 1.1em;
+		display: block;
+	}
+
+	.cc_container .cc_btn
+	{
+		font-size: 0.9em;
+	}
+
+	.cc_container .cc_message
+	{
+		font-size: 0.7em;
+	}
+
+	.cc_container .cc_list
+	{
+		display: inline-block;
+	}
+
+	.cc_container .cc_list .cc_cell
+	{
+		font-size: 0.8em;
+	}
+
+	.cc_container .cc_btn_grp
+	{
+		margin: 0;
+		display: inline-block;
+	}
+}
+
 @media screen and (min-width : 500px)
 {
 
