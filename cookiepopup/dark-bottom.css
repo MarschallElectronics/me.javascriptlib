@@ -113,28 +113,32 @@
 	.cc_container .cc_btn
 	{
 		font-size: 0.9em;
+		padding: 6px 10px !important;
 	}
 
 	.cc_container .cc_message
 	{
-		font-size: 0.7em;
-	}
-
-	.cc_container .cc_list
-	{
-		display: inline-block;
+		font-size: 0.65em;
+		width: 100%;
+		margin-bottom: 0.5em;
 	}
 
 	.cc_container .cc_list .cc_cell
 	{
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
-
+	.cc_container .cc_list
+	{
+		display: inline-block;
+		width: 40%;
+	}
 	.cc_container .cc_btn_grp
 	{
 		margin: 0;
 		display: inline-block;
+		width: 60%;
 	}
+
 }
 
 @media screen and (min-width : 500px)
