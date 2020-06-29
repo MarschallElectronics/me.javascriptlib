@@ -102,8 +102,13 @@
 	opacity : 1
 }
 
-@media screen and (min-width : 320px)
+@media screen and (max-width : 499px)
 {
+	.cc_container {
+		width: 96%;
+		height: 30%;
+	}
+
 	.cc_container a
 	{
 		font-size: 1.1em;
@@ -112,7 +117,7 @@
 
 	.cc_container .cc_btn
 	{
-		font-size: 0.9em;
+		font-size: 0.8em;
 		padding: 6px 10px !important;
 	}
 
