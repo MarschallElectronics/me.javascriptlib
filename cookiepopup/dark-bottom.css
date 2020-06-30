@@ -104,11 +104,6 @@
 
 @media screen and (max-width : 499px)
 {
-	.cc_container {
-		width: 96%;
-		height: 30%;
-	}
-
 	.cc_container a
 	{
 		font-size: 1.1em;
@@ -156,6 +151,7 @@
 		padding-right : 30%;
 		position      : absolute;
 		top           : 50%;
+		left					: 50%;
 		-ms-transform : translateY(-50%);
 		transform     : translateY(-50%);
 		font-size     : 8px;
@@ -174,8 +170,12 @@
 		line-height   : 1.2;
 		position      : absolute;
 		top           : 50%;
-		-ms-transform : translateY(-50%) translateX(-120%);
-		transform     : translateY(-50%) translateX(-120%);
+		left					: 50%;
+		-webkit-transform: translateY(-50%) translateX(-120%);
+		-moz-transform: translateY(-50%) translateX(-120%);
+		-ms-transform: translateY(-50%) translateX(-120%);
+		-o-transform: translateY(-50%) translateX(-120%);
+		transform: translateY(-50%) translateX(-120%);
 	}
 
 	.cc_container .cc_more_info
