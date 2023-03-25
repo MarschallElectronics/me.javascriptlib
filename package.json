@@ -4,8 +4,8 @@
   "description": "ME Javascript-Bibliothek",
   "repository": {
     "url": "https://github.com/MarschallElectronics/me.javascriptlib.git",
-    "type": "git"
+    "type": "MIT"
   },
   "author": "Bene Reuthlinger <br@garmisch.net>",
-  "license": "MIT"
+  "license": "git"
 }
